@@ -4,9 +4,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $light-gray;
+    background-image: url('../../assets/fondo1.png') ;
 }
 
 .auth__container{
-    background-color: $primary;
+    border: 0px solid;
+    border-radius: 6px;
+    background-color: $light-gray;
+    opacity: 0.95;
+    max-width: 420px;
+}
+
+.auth__logo{
+    width: 100px;;
 }

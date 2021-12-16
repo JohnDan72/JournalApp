@@ -10,7 +10,7 @@ const defaultProps = {};
 
 const AuthRouter = () => {
     return (
-        <div className="auth__main">
+        <div className="auth__main imgCenterAndCover">
 
             <Routes>
                 <Route path="" element={<AuthMain />}>

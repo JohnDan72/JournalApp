@@ -3,8 +3,11 @@ import { Outlet } from 'react-router-dom';
 
 const AuthMain = () => {
     return (
-        <div className='auth__container container'>
-            <Outlet />
+        <div className='auth__container'>
+            <div className='my-5 mx-3'>
+                <Outlet />
+
+            </div>
         </div>
     );
 }
