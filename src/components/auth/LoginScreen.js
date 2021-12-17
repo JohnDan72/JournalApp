@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { assetHelper } from '../../helpers/assetHelper';
 // import PropTypes from 'prop-types';
 
@@ -38,7 +39,7 @@ const LoginScreen = () => {
                     <span>
                         ¿Aún no tienes una cuenta?
                     </span>
-                    <a className="btn" href="#"> Crea una aquí </a>
+                    <Link className="btn" to={`/auth/register`}>Crea una aquí</Link>
                 </section>
                 <section className='col-10 offset-1 text-center '>
                     <hr />
@@ -48,9 +49,9 @@ const LoginScreen = () => {
                     <h6>
                         ó inicia sesión con Google
                     </h6>
-                    <a className="btn" href="#">
+                    <Link className="btn" to={`/auth/register`}>
                         <img src={assetHelper(`./googleIcon.png`).default} className='img-fluid' width="30" alt='google logo' />
-                    </a>
+                    </Link>
                 </section>
 
             </section>
