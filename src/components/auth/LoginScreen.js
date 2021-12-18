@@ -30,7 +30,7 @@ const LoginScreen = () => {
                             <input type="password" className="form-control" id="id_password" placeholder="contraseña..." />
                         </section>
                         <section className='col-12 mt-4 text-center'>
-                            <button className='btn btn-primary w-100'> Login </button>
+                            <button className='btn send-btn w-100'> Login </button>
                         </section>
                     </section>
                 </form>
