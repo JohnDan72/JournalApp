@@ -23,6 +23,11 @@ main{
 .send-btn{
     color: $light-gray;
     background-color: $primary;
+
+    &:hover{
+        color: $light-gray;
+        background-color: $dark-gray;
+    }
 }
 
 

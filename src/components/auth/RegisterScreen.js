@@ -43,7 +43,7 @@ const RegisterScreen = () => {
                             <input type="password" className="form-control" name="passwordConfirm" id="id_password_2" placeholder="confirma la contraseña" />
                         </section>
                         <section className='col-12 mt-4 text-center'>
-                            <button className='btn btn-primary w-100'> Crear </button>
+                            <button className='btn send-btn w-100'> Crear </button>
                         </section>
                     </section>
                 </form>
