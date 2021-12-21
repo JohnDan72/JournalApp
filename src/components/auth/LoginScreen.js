@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { assetHelper } from '../../helpers/assetHelper';
 // import PropTypes from 'prop-types';
 
@@ -9,6 +9,15 @@ const defaultProps = {};
 
 
 const LoginScreen = () => {
+    const navigate = useNavigate();
+    const loginHandle = ( e ) => {
+        console.log(e)
+        e.preventDefault();
+        console.log("Login!!!!!");
+        return navigate(`/journal`);
+    }
+
+
     return (
         <div className="container ">
             <section className='row'>
@@ -19,7 +28,7 @@ const LoginScreen = () => {
                     <h6>Login</h6>
                 </section>
                 {/* formulario */}
-                <form className='col-12'>
+                <form className='col-12' onSubmit={loginHandle}>
                     <section className='row'>
                         <section className='col-12 mt-3'>
                             <label htmlFor="id_email" className="form-label">Email</label>
@@ -30,7 +39,7 @@ const LoginScreen = () => {
                             <input type="password" className="form-control" id="id_password" placeholder="contraseña..." />
                         </section>
                         <section className='col-12 mt-4 text-center'>
-                            <button className='btn send-btn w-100'> Login </button>
+                            <button type="submit" className='btn send-btn w-100'> Login </button>
                         </section>
                     </section>
                 </form>

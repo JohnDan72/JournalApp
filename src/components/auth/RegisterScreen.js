@@ -1,12 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { assetHelper } from '../../helpers/assetHelper';
 
 const propTypes = {};
 const defaultProps = {};
 
 const RegisterScreen = () => {
-
+    const navigate = useNavigate();
+    const registerHandle = (e) => {
+        console.log(e)
+        e.preventDefault();
+        console.log("Register!!!!!");
+        return navigate(`/journal`);
+    }
     return (
         <div className="container ">
             <section className='row'>
@@ -17,7 +23,7 @@ const RegisterScreen = () => {
                     <h6 className='text-muted'>Registro</h6>
                 </section>
                 {/* formulario */}
-                <form className='col-12'>
+                <form className='col-12' onSubmit={(e) => registerHandle(e)}>
                     <section className='row'>
                         <section className='col-12 text-center'>
                             <h6 className='text-muted'>Llena los campos necesarios para tu nueva cuenta</h6>
@@ -43,7 +49,7 @@ const RegisterScreen = () => {
                             <input type="password" className="form-control" name="passwordConfirm" id="id_password_2" placeholder="confirma la contraseña" />
                         </section>
                         <section className='col-12 mt-4 text-center'>
-                            <button className='btn send-btn w-100'> Crear </button>
+                            <button type="submit" className='btn send-btn w-100'> Crear </button>
                         </section>
                     </section>
                 </form>
