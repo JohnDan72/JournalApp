@@ -13,6 +13,19 @@ const Sidebar = () => {
                     <Link className='btn btn-primary' to={`/auth`}>Log-out</Link>
                 </div>
             </div>
+            <div className='row my-4'>
+                <div className='col-8 offset-2'>
+
+                    <div className="journal__card card">
+                        <i  className="bi bi-calendar-plus text-center"
+                            style={{fontSize: '4rem'}}></i>
+                        {/* <img src="..." className="card-img-top" alt="..." /> */}
+                        <div className="card-body text-center">
+                            <button type='button' className="btn btn-1">New entry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div className='row mt-4'>
                 <div className="col-12 alert alert-dark" role="alert">
                     Lista de notas 1

@@ -45,4 +45,24 @@ main{
     }
 }
 
+.btn-1{
+    color: $light-gray;
+    background-color: unset;
+
+    &:hover{
+        color: $light-gray;
+        background-color: darken($color: $primary, $amount: 15);
+    }
+}
+
+.btn-2{
+    color: $dark-gray;
+    background-color: unset;
+
+    &:hover{
+        color: $light-gray;
+        background-color: darken($color: $primary, $amount: 15);
+    }
+}
+
 

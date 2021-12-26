@@ -46,7 +46,7 @@ const JournalScreen = () => {
                                 <input type="nota" className="form-control" id="id_nota" placeholder="tu nota" />
                             </section>
                             <section className='col-12 col-md-4 my-auto text-center'>
-                                <button type="submit" className='btn btn-primary'> Agregar nota </button>
+                                <button type="submit" className='btn btn-2'> Agregar nota </button>
                             </section>
                         </form>
                     </div>
