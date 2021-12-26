@@ -35,3 +35,14 @@ main{
     height: 100vh;
 }
 
+.nav_item{
+    color: $light-gray;
+    background-color: unset;
+
+    &:hover{
+        color: $light-gray;
+        background-color: darken($color: $primary, $amount: 10);
+    }
+}
+
+

@@ -4,11 +4,17 @@
 }
 
 .journal__container{
-    color: $light-gray;
-    background-color: $primary;
+    color: $dark-gray;
+    background-color: $light-gray;
 }
 
 .journal__sidebar{
     color: $light-gray;
     background-color: $dark-gray;
 }
+
+.journal__navbar{
+    color: $light-gray;
+    background-color: $primary;
+}
+

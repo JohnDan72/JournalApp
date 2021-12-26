@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Sidebar from './Sidebar';
 // import PropTypes from 'prop-types';
 
@@ -17,9 +18,28 @@ const JournalScreen = () => {
                 <div className='col-12 col-md-4 journal__sidebar'>
                     <Sidebar className='col-12 col-md-4' />
                 </div>
-                <div className='journal__container col-12 col-md-8'>
-                    <div className='container my-4'>
-                        <h2> Journal Screen </h2>
+                <div className='col-12 col-md-8'>
+                    <div className='row'>
+                        <nav className="journal__navbar navbar navbar-expand-lg">
+                            <div className="container-fluid">
+                                <span className='navbar-brand' to={`/auth`}>
+                                    25 de diciembre 2021
+                                </span>
+                                
+                                <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                                    <ul className="navbar-nav ">
+                                        <li className="nav-item">
+                                            <Link className='btn nav_item' to={`/auth`}>Picture</Link>
+                                        </li>
+                                        <li className="nav-item">
+                                            <Link className='btn nav_item' to={`/auth`}>Save</Link>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                    <div className='journal__container container my-4'>
 
                         <form className='row mt-4' onSubmit={handleNota}>
                             <section className='col-12 col-md-8 my-auto'>
