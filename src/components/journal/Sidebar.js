@@ -10,7 +10,7 @@ const Sidebar = () => {
                     <span> Juan Daniel Garcia </span>
                 </div>
                 <div className='col align-self-end text-end'>
-                    <Link className='btn btn-primary' to={`/auth`}>Log-out</Link>
+                    <Link className='btn nav_item' to={`/auth`}>Log-out</Link>
                 </div>
             </div>
             <div className='row my-4'>
