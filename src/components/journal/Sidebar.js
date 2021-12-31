@@ -7,6 +7,7 @@ const Sidebar = () => {
         <div className="container my-4">
             <div className='row mt-4'>
                 <div className='col align-self-start my-auto'>
+                <i className="bi bi-moon-stars"></i>
                     <span> Juan Daniel Garcia </span>
                 </div>
                 <div className='col align-self-end text-end'>
@@ -28,16 +29,48 @@ const Sidebar = () => {
             </div>
             <div className='row mt-4'>
                 <div className="col-12 alert alert-dark" role="alert">
-                    Lista de notas 1
+                    <div className='row'>
+                        <div className='col-9'>
+                            <h5>Lista de notas 1</h5>
+                            <p>Descripción de nota 1</p>
+                        </div>
+                        <div className='col-3 my-auto'>
+                            <p>Martes 1nd</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-12 alert alert-dark" role="alert">
-                    Lista de notas 2
+                    <div className='row'>
+                        <div className='col-9'>
+                            <h5>Lista de notas 2</h5>
+                            <p>Descripción de nota 2</p>
+                        </div>
+                        <div className='col-3 my-auto'>
+                            <p>Martes 2nd</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-12 alert alert-dark" role="alert">
-                    Lista de notas 3
+                    <div className='row'>
+                        <div className='col-9'>
+                            <h5>Lista de notas 3</h5>
+                            <p>Descripción de nota 3</p>
+                        </div>
+                        <div className='col-3 my-auto'>
+                            <p>Martes 3nd</p>
+                        </div>
+                    </div>
                 </div>
                 <div className="col-12 alert alert-dark" role="alert">
-                    Lista de notas 4
+                    <div className='row'>
+                        <div className='col-9'>
+                            <h5>Lista de notas 4</h5>
+                            <p>Descripción de nota 4</p>
+                        </div>
+                        <div className='col-3 my-auto'>
+                            <p>Martes 4nd</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
