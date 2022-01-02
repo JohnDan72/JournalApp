@@ -48,6 +48,10 @@ const JournalScreen = () => {
                             <section className='col-12 col-md-4 my-auto text-center'>
                                 <button type="submit" className='btn btn-2'> Agregar nota </button>
                             </section>
+                            <section className='col-12 my-5'>
+                                <h4>Hoy fue un excelente día</h4>
+                                <h6> Ternimé un maravilloso año</h6>
+                            </section>
                         </form>
                     </div>
                 </div>
